@@ -30,7 +30,7 @@
 
     <!-- Columns -->
     <div class="mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-14">
-      <div class="grid gap-12 lg:grid-cols-12">
+      <div class="grid gap-10 lg:grid-cols-12 lg:gap-12">
         <div class="lg:col-span-4">
           <BrandMark />
           <p class="mt-5 text-sm text-cream/70 max-w-xs leading-relaxed">
@@ -42,28 +42,34 @@
           </p>
         </div>
 
-        <div class="lg:col-span-5">
-          <p class="text-[0.65rem] tracking-tag uppercase text-gold mb-4">Practice</p>
-          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 text-sm">
-            <li v-for="p in practices" :key="p.slug">
-              <router-link
-                :to="p.hasPage ? p.href : '/practice'"
-                class="group inline-flex items-baseline gap-2 text-cream/80 hover:text-gold transition-colors"
-              >
-                <span class="h-px w-3 bg-gold/50 group-hover:w-5 transition-all" aria-hidden="true" />
-                {{ p.name }}
-              </router-link>
-            </li>
-          </ul>
-        </div>
+        <!-- Mobile: Navigate | Practice side-by-side. Desktop: dissolve into 12-col grid. -->
+        <div class="grid grid-cols-2 gap-x-5 gap-y-8 sm:gap-x-8 lg:contents">
+          <div class="min-w-0 lg:col-span-3 lg:order-last">
+            <p class="text-[0.65rem] tracking-tag uppercase text-gold mb-3 sm:mb-4">Navigate</p>
+            <ul class="space-y-2 text-sm text-cream/80">
+              <li v-for="link in nav" :key="link.to">
+                <router-link :to="link.to" class="hover:text-gold transition-colors">{{ link.label }}</router-link>
+              </li>
+            </ul>
+          </div>
 
-        <div class="lg:col-span-3">
-          <p class="text-[0.65rem] tracking-tag uppercase text-gold mb-4">Navigate</p>
-          <ul class="space-y-2.5 text-sm text-cream/80">
-            <li v-for="link in nav" :key="link.to">
-              <router-link :to="link.to" class="hover:text-gold transition-colors">{{ link.label }}</router-link>
-            </li>
-          </ul>
+          <div class="min-w-0 lg:col-span-5 lg:order-2">
+            <p class="text-[0.65rem] tracking-tag uppercase text-gold mb-3 sm:mb-4">Practice</p>
+            <ul class="grid grid-cols-1 gap-y-2 text-sm lg:grid-cols-2 lg:gap-x-8 lg:gap-y-2.5">
+              <li v-for="p in practices" :key="p.slug">
+                <router-link
+                  :to="p.hasPage ? p.href : '/practice'"
+                  class="group inline-flex items-baseline gap-1.5 sm:gap-2 text-cream/80 hover:text-gold transition-colors"
+                >
+                  <span
+                    class="hidden sm:block h-px w-3 shrink-0 bg-gold/50 group-hover:w-5 transition-all"
+                    aria-hidden="true"
+                  />
+                  {{ p.name }}
+                </router-link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
