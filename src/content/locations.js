@@ -6,7 +6,7 @@ export const locations = [
     address: '5319 S. Lewis Ave, Suite 120, Tulsa, OK 74105',
     phone: '918-743-2233',
     href: 'tel:+19187432233',
-    x: 72,
+    x: 148,
     y: 48,
   },
   {
@@ -17,8 +17,8 @@ export const locations = [
     phone: '405-367-8710',
     href: 'tel:+14053678710',
     site: 'okcattorneys.net',
-    x: 42,
-    y: 52,
+    x: 92,
+    y: 54,
   },
   {
     id: 'claremore',
@@ -27,7 +27,7 @@ export const locations = [
     phone: '918-379-4862',
     href: 'tel:+19183794862',
     site: 'claremoreattorneys.net',
-    x: 76,
+    x: 158,
     y: 42,
   },
   {
@@ -37,8 +37,8 @@ export const locations = [
     phone: '918-283-7394',
     href: 'tel:+19182837394',
     site: 'wagonerattorneys.net',
-    x: 80,
-    y: 50,
+    x: 166,
+    y: 52,
   },
   {
     id: 'creek',
@@ -47,8 +47,8 @@ export const locations = [
     phone: '918-209-3709',
     href: 'tel:+19182093709',
     site: 'creekcountyattorneys.com',
-    x: 64,
-    y: 50,
+    x: 132,
+    y: 52,
   },
   {
     id: 'okmulgee',
@@ -57,8 +57,8 @@ export const locations = [
     phone: '918-621-8083',
     href: 'tel:+19186218083',
     site: 'okmulgeelawyers.com',
-    x: 68,
-    y: 58,
+    x: 142,
+    y: 68,
   },
   {
     id: 'tahlequah',
@@ -67,7 +67,7 @@ export const locations = [
     phone: '918-209-3709',
     href: 'tel:+19182093709',
     site: 'tahlequahlawyers.com',
-    x: 84,
-    y: 46,
+    x: 176,
+    y: 48,
   },
 ]
