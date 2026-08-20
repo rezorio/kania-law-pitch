@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest: #1e3a32;
+  --gold: #c4a36a;
+  --cream: #f4f0e8;
+  --ink: #141414;
+  --sage: #3f6b58;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-ink font-sans;
+}
+
+::selection {
+  background: #c4a36a;
+  color: #141414;
+}
+
+.gold-rule {
+  height: 1px;
+  background: var(--gold);
+  transform-origin: left center;
+  transition: transform 0.7s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
