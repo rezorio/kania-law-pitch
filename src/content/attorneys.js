@@ -5,7 +5,6 @@ export const attorneys = [
     role: 'Managing Partner',
     initials: 'CK',
     featured: true,
-    email: 'charles@kanialaw.com',
     photo: 'charles-kania.jpg',
     admissions: [
       'Oklahoma Bar Association',

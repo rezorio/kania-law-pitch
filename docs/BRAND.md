@@ -35,7 +35,7 @@ Short, specific, Oklahoma. No invented verdicts. Proof only from published firm 
 - Address: 5319 S. Lewis Ave, Suite 120, Tulsa, OK 74105
 - Phone: 918-743-2233
 - Fax: 918-743-2244
-- Email: charles@kanialaw.com
+- Email: not shown publicly on the pitch demo (use phone / Ask a Lawyer)
 
 ## Palette
 

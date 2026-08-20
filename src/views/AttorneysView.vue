@@ -16,9 +16,6 @@
         <h2 class="font-display text-3xl">{{ charles.name }}</h2>
         <p class="text-sage mt-1">{{ charles.role }}</p>
         <p class="mt-4 leading-relaxed text-ink/80">{{ charles.bio }}</p>
-        <p class="mt-4 text-sm">
-          <a :href="`mailto:${charles.email}`" class="text-forest underline">{{ charles.email }}</a>
-        </p>
         <h3 class="font-display text-xl mt-8">Bar admissions</h3>
         <ul class="mt-2 text-sm space-y-1 text-ink/75">
           <li v-for="a in charles.admissions" :key="a">{{ a }}</li>

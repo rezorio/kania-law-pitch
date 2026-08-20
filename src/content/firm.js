@@ -4,7 +4,6 @@ export const firm = {
   phone: '918-743-2233',
   phoneHref: 'tel:+19187432233',
   fax: '918-743-2244',
-  email: 'charles@kanialaw.com',
   address: {
     line1: '5319 S. Lewis Ave, Suite 120',
     city: 'Tulsa, OK 74105',
