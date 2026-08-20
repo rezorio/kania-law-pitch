@@ -1,6 +1,6 @@
 # Kania Law Office — Pitch Redesign
 
-**Status:** Concept demo for client approval (not the live firm website).  
+**Status:** Concept demo live at [kania-law-pitch.vercel.app](https://kania-law-pitch.vercel.app) (not the live firm website).  
 **Live site we are replacing in the pitch:** [kanialaw.com](https://www.kanialaw.com/)  
 **Stack:** Vue 3 (Composition API, `<script setup>`), Vite, Vue Router, Tailwind CSS, Lucide Vue Next, GSAP.
 

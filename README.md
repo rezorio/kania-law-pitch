@@ -2,6 +2,8 @@
 
 Vue 3 + Tailwind pitch demo for [kanialaw.com](https://www.kanialaw.com/). Not the live firm website.
 
+**Live preview:** [https://kania-law-pitch.vercel.app](https://kania-law-pitch.vercel.app) — start at `/pitch`.
+
 ## Run
 
 ```bash
